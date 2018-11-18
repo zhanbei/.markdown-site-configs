@@ -3,15 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-	<title><%= title %></title>
+	<title><%= node.title %></title>
 	<link type="text/css" rel="stylesheet" href="/assets/styles/github-flavored-markdown-pilcrow-hljs.min.css">
-	<base href="<%= urlPlainName %>/">
 </head>
 <body>
 
 <article class="markdown-body">
 
-<%- content %>
+	<h1><%= node.title %></h1>
+
+	<% nodes.map(item => {
+		if (item.isDirectory) {
+
+		} else if (item.isFile && item.isMarkdownFile) {
+
+		} else {
+			return;
+		}
+	%>
+	<p>
+		<a href="<%= item.href %>"><%= item.title %></a>
+	</p>
+	<% }); %>
 
 </article>
 
