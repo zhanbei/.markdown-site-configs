@@ -2,7 +2,7 @@
 
 <!-- > 2018-08-06T20:58:02+0800 -->
 
-An example of configurations for the [Markdown Site Generator](https://github.com/zhanbei/Markdown-Site-Generator).
+An example of configurations for the [Markdown Site Generator](https://github.com/zhanbei/Markdown-Site-Generator) with the [github flavored markdown](https://github.github.com/gfm/) supported.
 
 ## Requirements
 
@@ -11,7 +11,7 @@ Make sure you have
 - the [`MarkdownSiteGenerator`](https://github.com/zhanbei/Markdown-Site-Generator) installed and have the command `generate-md-site`.
 	- This command is used to generate site based on markdown files.
 - the [`static-server`](https://github.com/zhanbei/static-server) installed and have the command `static-server`.
-	- This command is used to host generated site in the no-trailing-slash mode.
+	- This command is used to host the generated site in the no-trailing-slash mode.
 
 ## Start a Brand New Blog
 
